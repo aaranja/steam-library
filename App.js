@@ -1,13 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import SteamLibraryScreen from './screens/SteamLibraryScreen';
+import GameDetailScreen from './screens/GameDetailScreen';
+import * as hs from "./styles/HeaderStyle";
 
 export default function App() {
+  const Stack = createStackNavigator();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer style={styles.container}>
+      <Stack.Navigator>
+        <Stack.Screen
+            name ="Steam-Library"
+            component={SteamLibraryScreen}
+            options={{
+              title: 'Librería de Steam',
+              options: hs.styles
+            }}
+            />
+        <Stack.Screen name='Juego Steam' component={GameDetailScreen}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

@@ -1,0 +1,4 @@
+react-native-htmlview
+axios
+@react-navigation/native
+@react-navigation/stack

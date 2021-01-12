@@ -1,0 +1,22 @@
+export const steam_games = [
+    {"appid":1145360,"name":"Hades"},
+    {"appid":375130,"name":"Tin Star"},
+    {"appid":375140,"name":"Tin Star Demo"},
+    {"appid":375160,"name":"Discouraged Workers - Original Sound Track"},
+    {"appid":375161,"name":"Discouraged Workers - Tarot PNP Pack"},
+    {"appid":375170,"name":"Gunpowder"},
+    {"appid":375180,"name":"Lunch Truck Tycoon"},
+    {"appid":375190,"name":"VROOM: Aerie"},
+    {"appid":375200,"name":"Sakura Fantasy Chapter 1"},
+    {"appid":375210,"name":"Unveil"},
+    {"appid":375220,"name":"Bitweb"},
+    {"appid":375230,"name":"Warhammer 40,000: Eternal Crusade"},
+    {"appid":375250,"name":"Pizza Express"},
+    {"appid":375290,"name":"Superstatic"},
+    {"appid":375310,"name":"Mighty Switch Force! Hose It Down!"},
+    {"appid":375320,"name":"Colortone"},{"appid":375330,"name":"Butsbal"},
+    {"appid":375340,"name":"Omni"},
+    {"appid":275830,"name":"7 Wonders: Magical Mystery Tour"},
+    {"appid":275850,"name":"No Man's Sky"},
+    {"appid":276020,"name":"Ascend: Hand of Kul TEST"}
+]
