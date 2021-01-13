@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,6 +11,7 @@ export default function App() {
   return (
     <NavigationContainer style={styles.container}>
       <Stack.Navigator>
+        {/*Pantalla principal*/}
         <Stack.Screen
             name ="Steam-Library"
             component={SteamLibraryScreen}
@@ -19,8 +19,12 @@ export default function App() {
               title: 'Librería de Steam',
               options: hs.styles
             }}
-            />
-        <Stack.Screen name='Juego Steam' component={GameDetailScreen}/>
+          />
+        {/*Pantalla de juego*/}
+        <Stack.Screen 
+            name='Juego Steam' 
+            component={GameDetailScreen}
+          />
       </Stack.Navigator>
     </NavigationContainer>
   );

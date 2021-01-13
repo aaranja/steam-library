@@ -13,7 +13,11 @@ export const game_style = StyleSheet.create({
     thumbnail: {
         alignSelf: "center",
         width: "100%",
-        height:  140,
+        height:  160,
+    },
+    image_descriptor: {
+        marginBottom: 10,
+   
     },
     description_title:{
         fontWeight:"bold",

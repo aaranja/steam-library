@@ -35,7 +35,6 @@ export default class GameDetailScreen extends Component{
             }
         }
     };
-
     /* Poner nombre del juego en la cabecera de la vista
     * y axios.get para conseguir los datos del juego */
     componentDidMount() {
@@ -71,7 +70,7 @@ export default class GameDetailScreen extends Component{
         } else {
             if (node.name === 'img'){
                 const a = node.attribs;
-                return <GameImage style={style.game_style.thumbnail} key={index} source = {a.src}/>
+                return <GameImage style={style.game_style.image_descriptor} key={index} source = {a.src}/>
             }
         }
     }

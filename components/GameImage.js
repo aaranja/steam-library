@@ -50,8 +50,9 @@ export default class GameImage extends Component{
     };
 
     render(){
-        return <Image style={{height: 140 }} source = {this.state.img} />
+        return <Image style={{height: 160, width:308 }} source = {this.state.img} />
     }
 
 
 }
+

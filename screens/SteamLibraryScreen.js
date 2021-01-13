@@ -12,15 +12,10 @@ import * as home_s from "../styles/HomeScreenStyle";
 import axios from "axios";
 
 export default class SteamLibraryScreen extends Component{
-    abortController = new AbortController();
-    CancelToken = axios.CancelToken;
-    source = this.CancelToken.source();
 
     componentDidMount() {
         this.props.navigation.setOptions(hs.styles);
     }
-
-    componentWillUnmount() { this.source.cancel("Cancelado"); }
 
     setGame = (id, name) => {
         this.props.navigation.navigate(
